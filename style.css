@@ -1,0 +1,75 @@
+*{
+    background-color: rgba(16, 28, 58, 0.937);
+}
+body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+}
+.row{
+    background-color: black;
+    justify-content: space-evenly;
+}
+button{
+    border-radius: 50%;
+    width: 60px;         
+    height: 60px; 
+}
+.main {
+    display: flex;
+    border-radius: 30px;
+      flex-direction: column;
+    width: 30%;
+    height: 90%;
+    color: aliceblue;
+    background-color: black;
+}
+#disp{
+    display: flex;
+  height:20%;
+  width: 100%;
+  margin-top: 10%;
+  background-color: rgb(48, 45, 45);
+  justify-content: flex-end; 
+    align-items: flex-end;    
+}
+.col1 {
+    display: flex;
+    justify-content: space-evenly; /* space between buttons */
+    background-color: black;
+    gap: 10px;
+}
+
+.col1 button {
+    width: 60px;               /* fixed size */
+    height: 60px;              /* same as width */
+    border-radius: 50%;        /* makes it circular */
+    font-size: 18px;
+    color: brown;
+    background-color: grey;
+    border: none;
+    cursor: pointer;
+}
+.notdisp {
+    display: grid;
+    background-color: black;
+    grid-template-columns: repeat(5, 1fr); /* 4 equal columns */
+    gap: 10px; /* space between buttons */
+    padding: 10px;
+    height: 100%;
+    background-color: black;
+}
+
+.notdisp button {
+    aspect-ratio: 1 / 1;   /* keeps buttons perfectly square */
+    border-radius: 50%;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: brown;
+    background-color: grey;
+    border: none;
+    cursor: pointer;
+    width: 100%;           /* fills the grid cell */
+}
